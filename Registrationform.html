@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Registration Form</title>
+    <style>
+        body {
+            background-image: url(image/registration.jpg);
+            color: black;
+        }
+    </style>
+
+    <script>
+        function f1() {
+            a = prompt("Enter the otp sent on your mobile no. and email id")
+            alert("You are signed up successfully")
+        }
+    </script>
+</head>
+
+<body>
+    <h1 align="center" style="margin-top: 50px;">REGISTRATION FORM</h1>
+
+    <table align="center" cellpad(ding="10">
+        <form>
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input type="text" name="First_Name" />
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>LAST NAME</td>
+                <td><input type="text" name="Last_Name" />
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>EMAIL ID</td>
+                <td><input type="text" name="Email_Id" maxlength="100" /></td>
+            </tr>
+
+            <tr>
+                <td>MOBILE NUMBER</td>
+                <td>
+                    <input type="text" name="Mobile_Number" maxlength="10" />
+
+                </td>
+            </tr>
+
+            <tr>
+                    <td>PASSWORD</td>
+                    <td><input type="password" /></td> 
+            </tr>
+
+            <tr>
+                <td>COUNTRY</td>
+                <td>
+                    <select name="Country" id="t4">
+                        <option value="-1" selected>[choose yours]</option>
+                        <option value="1">INDIA</option>
+                        <option value="2">USA</option>
+                        <option value="3">UK</option>
+                        <option value="4">RUSSIA</option>
+                        <option value="5">UKRAINE</option>
+                        <option value="6">AUSTRALIA</option>
+                        <option value="7">NEPAL</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Sign up" onclick="f1()"
+                        style="border: solid gray; cursor:pointer; border-radius: 5px;">
+                    <input type="reset" value="Reset" style="border: solid gray; cursor: pointer; border-radius: 5px;">
+                </td>
+            </tr>
+        </form>
+    </table>
+
+
+</body>
+
+</html>
